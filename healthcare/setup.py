@@ -1584,11 +1584,11 @@ def delete_custom_records():
 
 def remove_from_active_domains():
 	"""Remove Healthcare from active domains in Domain Settings"""
-	frappe.db.delete("Has Domain", {"domain": "Healthcare"})
+	frappe.db.delete("Has Domain", {"domain": "Long-term Care"})
 
 
 def remove_portal_settings_menu_items():
 	"""Remove menu items added in Portal Settings"""
-	menu_items = frappe.get_hooks("standard_portal_menu_items", app_name="healthcare")
+	menu_items = frappe.get_hooks("standard_portal_menu_items", app_name="longtermcare")
 	for item in menu_items:
 		frappe.db.delete("Portal Menu Item", item)
