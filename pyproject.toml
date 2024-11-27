@@ -1,8 +1,8 @@
 [project]
-name = "healthcare"
-description = "Modern, Open Source HIS built on Frappe and ERPNext"
+name = "longtermcare"
+description = "Long-term Care Electronic Health Record (EHR) built on Frappe and ERPNext"
 authors = [
-    { name = "earthians Health Informatics Pvt. Ltd.", email = "info@earthianslive.com" },
+    { name = "MarketGrowth LLC dba KayaOS", email = "support@kayaos.com" },
 ]
 readme = "README.md"
 license = {file = "LICENSE.txt"}
@@ -31,5 +31,5 @@ ensure_newline_before_comments = true
 indent = "\t"
 known_frappe = ["frappe"]
 known_erpnext = ["erpnext"]
-known_healthcare = ["healthcare"]
+known_healthcare = ["longtermcare"]
 sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FRAPPE", "ERPNEXT", "HEALTHCARE", "FIRSTPARTY", "LOCALFOLDER"]
