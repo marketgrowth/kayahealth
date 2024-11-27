@@ -8,4 +8,4 @@ Configuration for docs
 
 
 def get_context(context):
-	context.brand_html = "Long-term Care"
+	context.brand_html = "Healthcare"

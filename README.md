@@ -2,9 +2,9 @@
 <a href="https://frappehealth.com">
     <img src="https://raw.githubusercontent.com/frappe/healthcare/develop/healthcare/public/images/healthcare.svg" height="128" alt="Marley Health Logo">
   </a>
-  <h2>Kaya Long-term Care EHR</h2>
+  <h2>Marley Health</h2>
   <p align="center">
-    <p>Open source & easy-to-use electronic health record for small to medium-sized long-term care providers.</p>
+    <p>Open source & easy-to-use hospital information system(HIS) for all healthcare organisations.</p>
   </p>
 
   [Marley Health](https://frappehealth.com/home)
