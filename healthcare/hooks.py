@@ -1,6 +1,6 @@
 from . import __version__ as app_version  # noqa
 
-app_name = "longtermcare"
+app_name = "healthcare"
 app_title = "Kaya EHR for LTC"
 app_publisher = "MarketGrowth LLC dba KayaOS"
 app_description = "Open Source Electronic Health Record for Long-term Care Providers"
