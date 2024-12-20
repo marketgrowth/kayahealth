@@ -2,7 +2,7 @@
 <a href="https://frappehealth.com">
     <img src="https://raw.githubusercontent.com/frappe/healthcare/develop/healthcare/public/images/healthcare.svg" height="128" alt="Kaya EHR for LTC Logo">
   </a>
-  <h2>Kaya EHR for LTC</h2>
+  <h2>Kaya Long-term Care</h2>
   <p align="center">
     <p>Open source & easy-to-use electronic health record for long-term care providers.</p>
   </p>
