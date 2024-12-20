@@ -1,6 +1,6 @@
 [project]
 name = "healthcare"
-description = "Open Source Electronic Health Record for Long-term Care Providers"
+description = "Open Source Electronic Health Record for Long-term Care"
 authors = [
     { name = "MarketGrowth LLC dba KayaOS", email = "support@kayaos.com" },
 ]
