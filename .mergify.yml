@@ -3,6 +3,7 @@ pull_request_rules:
     conditions:
       - and:
         - author!=Sajinsr
+        - author!=akashkrishna619
         - author!=akurungadam
         - author!=earthians-pr-bot
         - author!=mergify[bot]

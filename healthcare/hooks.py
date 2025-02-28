@@ -1,18 +1,30 @@
 from . import __version__ as app_version  # noqa
 
 app_name = "healthcare"
-app_title = "Marley Health"
-app_publisher = "earthians Health Informatics Pvt. Ltd."
-app_description = "Modern, Open Source HIS built on Frappe and ERPNext"
+
+app_title = "Long-term Care"
+app_publisher = "MarketGrowth LLC dba KayaOS"
+app_description = "Open Source Electronic Health Record for Long-term Care Providers"
+
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "info@earthianslive.com"
+app_email = "support@kayaos.com"
 app_license = "GNU GPL V3"
 required_apps = ["erpnext"]
+app_home = "/app/healthcare"
+
+add_to_apps_screen = [
+	{
+		"name": "healthcare",
+		"logo": "/assets/healthcare/images/healthcare.svg",
+		"title": "Long-term Care",
+		"route": "/app/healthcare",
+		"has_permission": "erpnext.check_app_permission",
+	}
+]
 
 # Includes in <head>
 # ------------------
-
 # include js, css files in header of desk.html
 # app_include_css = "/assets/healthcare/css/healthcare.css"
 app_include_js = "healthcare.bundle.js"
@@ -126,6 +138,10 @@ doc_events = {
 	"Patient": {
 		"after_insert": "healthcare.regional.india.abdm.utils.set_consent_attachment_details"
 	},
+	"Payment Entry": {
+		"on_submit": "healthcare.healthcare.custom_doctype.payment_entry.set_paid_amount_in_treatment_counselling",
+		"on_cancel": "healthcare.healthcare.custom_doctype.payment_entry.set_paid_amount_in_treatment_counselling",
+	},
 }
 
 scheduler_events = {
@@ -135,6 +151,7 @@ scheduler_events = {
 	"daily": [
 		"healthcare.healthcare.doctype.patient_appointment.patient_appointment.update_appointment_status",
 		"healthcare.healthcare.doctype.fee_validity.fee_validity.update_validity_status",
+		"healthcare.healthcare.doctype.inpatient_record.inpatient_record.add_occupied_service_unit_in_ip_to_billables",
 	],
 }
 
