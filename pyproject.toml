@@ -5,7 +5,6 @@ authors = [
     { name = "MarketGrowth LLC dba KayaOS", email = "support@kayaos.com" },
 ]
 readme = "README.md"
-license = {file = "LICENSE.txt"}
 requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [

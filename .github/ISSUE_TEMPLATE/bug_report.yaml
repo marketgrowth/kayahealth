@@ -34,13 +34,15 @@ body:
       options:
         - Outpatient Module
         - Inpatient ADT
-        - Laboratory
+        - Diagnostic Module
         - Clinical Procedure
         - Rehab & Physiotherapy
         - Patient History
+        - Code Standards
         - Setup / Configuration
         - Integration with ERPNext modules
         - Regional / Other Integrations
+        - Laboratory (legacy)
     validations:
       required: true
 
@@ -61,10 +63,10 @@ body:
     attributes:
       label: Installation method
       options:
+        - Frappe Cloud
         - docker
         - easy-install
         - manual install
-        - FrappeCloud
     validations:
       required: false
 
@@ -80,7 +82,7 @@ body:
     attributes:
       label: Code of Conduct
       description: |
-        By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/frappe/health/blob/develop/CODE_OF_CONDUCT.md)
+        By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/earthians/marley/blob/develop/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

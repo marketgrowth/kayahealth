@@ -1,9 +1,11 @@
 from . import __version__ as app_version  # noqa
 
 app_name = "healthcare"
+
 app_title = "Long-term Care"
 app_publisher = "MarketGrowth LLC dba KayaOS"
 app_description = "Open Source Electronic Health Record for Long-term Care Providers"
+
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "support@kayaos.com"
@@ -72,6 +74,7 @@ jinja = {
 	"methods": [
 		"healthcare.healthcare.doctype.diagnostic_report.diagnostic_report.diagnostic_report_print",
 		"healthcare.healthcare.utils.generate_barcodes",
+		"healthcare.healthcare.doctype.observation.observation.get_observations_for_medical_record",
 	]
 }
 
